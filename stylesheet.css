@@ -1,0 +1,199 @@
+html {
+    padding: 0 64px 0 64px;
+    background-color: #F6F6F6;
+}
+
+body {
+    max-width: 1024px;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    gap: 96px;
+}
+
+.side-bar {
+    padding-top: 64px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 75px;
+    gap: 16px;
+
+    position: sticky;
+    top: 0;
+}
+
+.side-bar-item {
+    font-family: "Neue Plak Compressed", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.side-bar-item.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;   
+    margin: 0 0 48px 0; 
+    pointer-events: none;
+}
+
+.title-main {
+    font-weight: 600;
+}
+
+.title-secondary {
+    margin-top: 12px;
+    font-size: 0.7em;
+    line-height: 0.9em;
+    font-weight: 400;
+}
+
+.title-year {
+    margin-top: px;
+    font-size: 0.7em;
+    line-height: 0.9em;
+    font-weight: 400;
+    color: teal;
+}
+
+.side-bar > a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+.side-bar > a:after {
+    border-radius: 1px;
+    border-top: 4px solid teal;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: -6px;
+      left: 0;
+    transition: right .3s cubic-bezier(0,.5,0,1);
+}
+
+.side-bar > a:hover:after {
+    right: 0;
+}
+
+.side-bar > a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.disabled {
+    pointer-events: none;
+    color: darkgray;
+}
+
+.content-container {
+    padding-bottom: 256px;
+}
+
+.content {
+    padding-top: 72px;
+    position: relative;
+}
+
+.content-heading {
+    margin-bottom: 32px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.content-heading > h1 {
+    font-family: "Neue Plak Compressed", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    width: fit-content;
+}
+
+.content-heading > h2 {
+    font-family: "Neue Plak Wide";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    width: fit-content;
+
+}
+
+.content-heading > h2::after {
+    border-radius: 1px;
+    border-top: 4px solid teal;
+    content: "";
+    position: absolute;
+      right: 0;
+      bottom: -0.3em;
+      left: 0;
+}
+
+.content-body {
+    column-count: 2;
+    column-gap: 1.6em;
+}
+
+p {
+    font-family: "Neue Plak Text";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;    
+    margin: 0 0 16px 0;
+}
+
+h3 {
+    font-family: "Neue Plak";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin: 16px 0 16px 0;
+    position: relative;
+    width: fit-content;
+
+    padding-bottom: 0.18em;
+
+    border-bottom: 2px solid teal;
+    display: inline-block;
+    line-height: 0.85;
+    text-shadow:
+      2px 2px #F6F6F6,
+      2px -2px #F6F6F6,
+      -2px 2px #F6F6F6,
+      -2px -2px #F6F6F6;
+}
+
+a {
+    color: teal;
+}
+
+a:visited {
+    color: teal;
+}
