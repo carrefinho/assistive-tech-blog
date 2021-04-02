@@ -197,3 +197,7 @@ a {
 a:visited {
     color: teal;
 }
+
+img {
+    width: 100%;
+}
