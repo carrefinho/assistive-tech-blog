@@ -166,6 +166,21 @@ p {
     margin: 0 0 16px 0;
 }
 
+li {
+    font-family: "Neue Plak Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;    
+    margin: 0 0 16px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
 h3 {
     font-family: "Neue Plak";
     font-size: 24px;
